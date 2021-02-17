@@ -47,8 +47,8 @@ function getImage(a){
 }
 
 var testImage = getImage(3);
-var winner = gameResult();
-//document.querySlector(".winner")
+
+document.getElementById("winner").innerHTML = gameResult();
 document.querySelector(".img1").setAttribute("src", getImage(p1roll));
 document.querySelector(".img2").setAttribute("src", getImage(p2roll));
 console.log(testImage);
