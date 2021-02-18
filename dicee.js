@@ -11,6 +11,7 @@ var p1roll = dieRoll();
 var p2roll = dieRoll();
 compareRolls(p1roll, p2roll);
 
+// six sided die roll
 function dieRoll(){
   var roll = Math.floor(Math.random() * 6) + 1;
   return roll;
@@ -31,7 +32,7 @@ function compareRolls(r1, r2){
 
 //the if / else structure here is
 //based on which boolean values have
-//been triggered by compareRolls function
+//been triggered by compareRolls() function
 function gameResult(){
   if(r1wins){
     return "Player one wins!";
@@ -57,7 +58,3 @@ var testImage = getImage(3);
 document.getElementById("winner").innerHTML = gameResult();
 document.querySelector(".img1").setAttribute("src", getImage(p1roll));
 document.querySelector(".img2").setAttribute("src", getImage(p2roll));
-
-//testing code not needed anymore
-console.log(testImage);
-console.log(p1roll + " " + p2roll);
