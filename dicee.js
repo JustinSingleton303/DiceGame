@@ -50,7 +50,6 @@ function getImage(a){
   return dImg;
 }
 
-var testImage = getImage(3);
 
 //all changes to the html document are
 //handeled here
